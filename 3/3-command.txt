@@ -1,0 +1,7 @@
+hadoop fs -mkdir /assign
+
+hadoop fs -put ‪D:\GLS\Hadoop\assignment\3\3.txt /assign
+
+hadoop jar ‪D:\GLS\Hadoop\assignment\3\avgWordCount.jar /assign/3.txt /assign/out
+
+hadoop fs -cat /assign/out/part-r-00000

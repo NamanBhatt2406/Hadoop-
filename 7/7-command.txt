@@ -1,0 +1,44 @@
+hadoop fs -mkdir /assign
+
+hadoop fs -put ‪D:\GLS\Hadoop\assignment\7\7.csv /assign
+
+
+7.1:- 
+
+hadoop jar ‪D:\GLS\Hadoop\assignment\7\7.1\comedyMovies.jar /assign/7.csv /assign/out
+
+hadoop fs -cat /assign/out/part-r-00000
+
+
+
+7.2:- 
+
+hadoop jar ‪D:\GLS\Hadoop\assignment\7\7.2\documentaryMovies.jar /assign/7.csv /assign/out2
+
+hadoop fs -cat /assign/out2/part-r-00000
+
+
+
+7.3:- 
+
+hadoop fs -put ‪D:\GLS\Hadoop\assignment\7\7.3\7_3.csv /assign    (missing genre from some records CSV file)
+
+hadoop jar ‪D:\GLS\Hadoop\assignment\7\7.3\missingGenre.jar /assign/7_3.csv /assign/out3
+
+hadoop fs -cat /assign/out3/part-r-00000
+
+
+
+7.4:- 
+
+hadoop jar ‪D:\GLS\Hadoop\assignment\7\7.4\goldInMovies.jar /assign/7.csv /assign/out4
+
+hadoop fs -cat /assign/out4/part-r-00000
+
+
+
+7.5:- 
+
+hadoop jar ‪D:\GLS\Hadoop\assignment\7\7.5\dramaRomanticMovies.jar /assign/7.csv /assign/out5
+
+hadoop fs -cat /assign/out5/part-r-00000
